@@ -2,7 +2,7 @@ from sheilai import *
 
 # start sheila instances
 
-Sheila = sheil_ai()
+Sheila = sheil_ai("./nl_processing/data.pth")
 
 Sheila.set_intents("./nl_processing/intents.json")
 Sheila.set_data("./nl_processing/data.pth")
