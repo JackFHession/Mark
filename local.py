@@ -2,7 +2,7 @@ from utils.functions import *
 from nl_processing.process_input import *
 from gui import *
 
-def main():
+def local_main():
     UserInput = input("You: ")
     display_face(thinking)
     intent_class = classify(UserInput)
@@ -10,4 +10,4 @@ def main():
     print(intent_class)
 
 if __name__ == "__main__":
-    main()
+    local_main()

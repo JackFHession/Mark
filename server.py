@@ -6,7 +6,7 @@ import json
 
 from utils.servertk import *
 
-def main():
+def server_main():
     # Start server for port 2040
     server_thread_2040 = threading.Thread(target=start_server, args=(2040,))
     server_thread_2040.start()
@@ -20,4 +20,4 @@ def main():
     server_thread_2060.join()
 
 if __name__ == "__main__":
-    main()
+    server_main()
